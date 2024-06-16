@@ -56,7 +56,7 @@ UserSchema.methods.setPassword = function(password) {
 UserSchema.methods.generateJWT = function() {
   var today = new Date();
   var exp = new Date(today);
-  exp.setTime(today.getTime() + 3600 * 1000); // Set exp to one hour from now
+  exp.setDate(today.getDate() + 60);
 
   return jwt.sign(
     {
