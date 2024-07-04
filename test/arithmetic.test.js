@@ -95,6 +95,19 @@ describe('Arithmetic', function () {
 
 // TODO: Challenge #1
  
+    // add tests for exponent operation
+    describe('Exponent', function () {
+        it('exponentiates two positive integers', function (done) {
+            request.get('/arithmetic?operation=exponent&operand1=2&operand2=3')
+                .expect(200)
+                .end(function (err, res) {
+                    expect(res.body).to.eql({ result: 8 });
+                    done();
+                });
+        }
+        );
+    });
+
 
     describe('Multiplication', function () {
         it('multiplies two positive integers', function (done) {
