@@ -87,4 +87,15 @@ router.post("/users", function(req, res, next) {
     .catch(next);
 });
 
+
+router.get('/errusers', async function(req, res, next) {
+  try {
+    const users = await User.find({});
+    res.json(users);
+  } catch (err) {
+    next(err);
+  }
+});
+
+
 module.exports = router;
