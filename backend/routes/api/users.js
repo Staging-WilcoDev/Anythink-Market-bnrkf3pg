@@ -87,4 +87,11 @@ router.post("/users", function(req, res, next) {
     .catch(next);
 });
 
+router.get('/all_users2', function(req, res, next) {
+  User.find({}, function(err, users) {
+    if (err) { return next(err); }
+    res.json(users);
+  });
+});
+
 module.exports = router;
