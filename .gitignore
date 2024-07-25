@@ -1,106 +1,28 @@
-build-assets.json
-
-# OS
-# ===========
-.DS_Store
-ehthumbs.db
-Icon?
-Thumbs.db
-
-# yarn berry
-# ==========================
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
-# Node and related ecosystem
-# ==========================
-.nodemonignore
-.sass-cache/
-node_modules/
-public/lib/
-app/tests/coverage/
-.bower-*/
-.idea/
-coverage/
-npm-debug.log
-
-# MEAN.js app and assets
-# ======================
-public/dist/
-uploads
-modules/users/client/img/profile/uploads
-config/env/local.js
-config/env/local-*.js
-*.pem
-
-# Ignoring MEAN.JS's gh-pages branch for documenation
-_site/
-
-# General
-# =======
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-*.tmp
-*.bak
-*.swo
-*.swp
-launchConfigurations/
-logs/
-build/
-lib-cov
-pids
-results
-config.js
-admins.json
+# Environment Configuration
 .env
+.env.*
 
-# Sublime editor
-# ==============
-.sublime-project
-*.sublime-project
-*.sublime-workspace
+# Dependency directory
+node_modules
 
-# Eclipse project files
-# =====================
-.project
-.settings/
-.*.md.html
-.metadata
-*~.nib
-local.properties
+# Test coverage directory
+coverage
 
-# IntelliJ
-# ========
-*.iml
+# Ignore Apple macOS Desktop Services Store
+.DS_Store
 
-# Cloud9 IDE
-# =========
-.c9/
-data/
-mongod
+# Logs
+logs
+*.log
 
-# Visual Studio
-# =========
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+# ngrok tunnel file
+config/tunnel.pid
 
-# E2E Testing 
-# =========
-instrumented/
-cypress/videos
-cypress/screenshots
+# vite build output
+dist/
 
-# nyc test coverage
-# =========
-.nyc_output/
+# extensions build output
+extensions/*/build
+
+# Node library SQLite database
+web/database.sqlite
