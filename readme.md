@@ -46,6 +46,7 @@ In this project you will find:
 
 - **How do I get a GitHub Copilot license?**
   - You can request a trial license from your GitHub Sales representative or via Copilot for Individuals or Business licenses.
+  - 
 - **How do I get a GitHub Codespaces license?**
     - Codespaces is included with GitHub Enterprise Cloud, GitHub Enterprise Server, and GitHub Free. You can check under your [billing settings page](https://github.com/settings/billing).
 - **I am having trouble activating GitHub Copilot after I load the plugin, what should I do?**
